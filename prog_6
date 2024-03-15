@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+    int a;
+    printf("enter a nuber: ");
+    scanf("%d", &a);
+    int result=0,rem;
+    while(a>0){
+        rem=a%10;
+        result=result*10+rem;
+        a=a/10;
+    }
+    
+    printf("%d", result);
+    return 0;
+}
+
